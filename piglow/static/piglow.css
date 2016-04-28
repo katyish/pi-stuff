@@ -1,0 +1,33 @@
+body {
+	padding-top: 70px;
+}
+
+.red, .red:hover {
+	background-color: red;
+	color: white;
+}
+
+.orange, .orange:hover {
+	background-color: orange;
+	color: white;
+}
+
+.yellow, .yellow:hover {
+	background-color: yellow;
+	color: black;
+}
+
+.green, .green:hover {
+	background-color: green;
+	color: white;
+}
+
+.blue, .blue:hover {
+	background-color: blue;
+	color: white;
+}
+
+.white, .white:hover {
+	background-color: white;
+	color: black;
+}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h2>Pick a colour:</h2>
+
+<div class="row">
+  <a class="col-md-2 btn btn-default red" href="{{ url_for('colour', col='red') }}">Red</a>
+  <a class="col-md-2 btn btn-default orange" href="{{ url_for('colour', col='orange') }}">Orange</a>
+  <a class="col-md-2 btn btn-default yellow" href="{{ url_for('colour', col='yellow') }}">Yellow</a>
+  <a class="col-md-2 btn btn-default green" href="{{ url_for('colour', col='green') }}">Green</a>
+  <a class="col-md-2 btn btn-default blue" href="{{ url_for('colour', col='blue') }}">Blue</a>
+  <a class="col-md-2 btn btn-default" href="{{ url_for('colour', col='white') }}">White</a>
+</div>
+
+
+<!--
+<ul class="list-group list-unstyled">
+<li><a class="list-group-item red" href="{{ url_for('colour', col='red') }}">Red</a></li>
+<li><a class="list-group-item orange" href="{{ url_for('colour', col='orange') }}">Orange</a></li>
+<li><a class="list-group-item yellow" href="{{ url_for('colour', col='yellow') }}">Yellow</a></li>
+<li><a class="list-group-item green" href="{{ url_for('colour', col='green') }}">Green</a></li>
+<li><a class="list-group-item blue" href="{{ url_for('colour', col='blue') }}">Blue</a></li>
+<li><a class="list-group-item" href="{{ url_for('colour', col='white') }}">White</a></li>
+</ul>
+
+-->
+
+<h2>Or select a pattern:</h2>
+
+<ul class="list-group list-unstyled">
+<li class="list-group-item"><a href="/cycleColour">Colour rings</a></li>
+<li class="list-group-item"><a href="/cycleIndiv">One by one</a></li>
+<li class="list-group-item"><a href="/spiral">Spiral</a></li>
+<li class="list-group-item"><a href="/cycleArms">Arms</a></li>
+</ul>
+
+
+{% endblock %}
